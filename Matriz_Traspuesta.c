@@ -4,7 +4,8 @@
 
 int main ()
 {
-    int filas, columnas;    
+    int filas, columnas;
+    int respaldo;  
     scanf("%d",&filas);
     scanf("%d",&columnas);
 
@@ -39,6 +40,20 @@ int main ()
     }
 
     puts(" ");
+
+
+    for(int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            printf(" %d ", MATRIZ[j][i]);
+
+            if(j == (columnas-1))
+            {
+                printf("\n");
+            }
+        }
+    }
 
     return 0;
 }
