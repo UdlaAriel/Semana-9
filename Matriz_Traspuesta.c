@@ -8,6 +8,8 @@ int main ()
     scanf("%d",&filas);
     scanf("%d",&columnas);
 
+    srand(time(NULL)); //Generamos numero aleatorio en base al tiempo
+
     /*Definicion de matriz*/
     int MATRIZ[50][50];
 
@@ -15,10 +17,8 @@ int main ()
     {
         for (int j = 0; j < columnas; j++)
         {
-            /*Funcion para numero randomico*/
+             /*Funcion para numero randomico*/
             int numero; //Variable donde se guardará nuestro numero aleatorio
-	
-	        srand(time(NULL)); //Generamos numero aleatorio en base al tiempo
 	        numero=rand() % 20;
 
             MATRIZ[i][j] = numero;
